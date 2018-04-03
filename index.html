@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Assign3 </title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="javascript/tourist_api.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGXPwDvYSKJ1yWMBQY9vdXDGzQD6H8mb0&callback=initMap" 
+          async defer></script>
+
+</head>
+
+<body>
+    
+
+    <script>
+     function initMap() {
+         map = new google.maps.Map(document.getElementById('map'), {
+             center: {lat: -34.397, lng: 174.7633},
+             zoom: 8
+         });
+     }
+    </script>
+    <form>
+    <input type="text" id="town" name="town"> <br>
+    <input type="button" id="submitBtn" value="submit">
+    </form>
+    <div id="map"></div>
+    <h1 id="viewed"> Towns Viewed: </h2> <br>
+        <ul id="list"></ul>
+     
+
+    
+</body>
+  
+</html>
